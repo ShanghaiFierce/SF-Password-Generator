@@ -64,11 +64,12 @@ var spchar = prompt("Would you like to add a special character in your password?
 if (spchar === "Y") {
     confirm("We will add a special character to your password.");
     console.log(spchar);
-    generate();
 }
 else {
     alert("You decided not to choose an special character, that's ok. Let's move on.");
 }
+
+generate();
 
 //Characters Critera
 //var charCriteria = {}
@@ -82,10 +83,10 @@ var userPassword = "";
 // // Generate the final password
 function generate() {
     if (lcstring == "Y") {
-        userPassword += lowerCase;
+        userPassword += lcstring;
     }
     if (upstring == "Y") {
-        userPassword += uppercase;
+        userPassword += upstring;
     }
     if (num == "Y") {
         userPassword += num;
